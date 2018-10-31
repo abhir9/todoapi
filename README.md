@@ -12,34 +12,51 @@ You need to have installed [NodeJS](https://nodejs.org/) with [npm](https://www.
 ### To run the server:
 
 ```
-$ npm start
+$ npm install
+
+$ npm start // node . 
 
 server starts at PORT=3000
  ```
 
 All dependencies will be installed automatically
 
-### To run in dev mode or debugg mode:
+### To run in dev mode :
 
 ```
 $npm run dev
 ```
+### To run test cases:
 
 ```
-$npm dev:debug
+$npm test
 ```
-
 
 ## API
-
 The server part has multiple **API endpoints** using several routes:
 
-- `POST /appuser/login` -> login user.
-- `POST /appuser/logout` -> logout user.
-- `GET /todos` -> get todos list.
-- `POST /todos` -> create new todo.
-- `PUT /todos` -> update todo.
+- `POST api/appuser/login` -> login user.
+- `POST api/appuser/logout` -> logout user.
+- `GET api/todos` -> get todos list.
+- `POST api/todos` -> create new todo.
+- `PUT api/todos` -> update todo.
 ---
+
+##UI
+please find the url of UI repository
+
+```
+https://github.com/abhir9/todoui
+```
+
+## Modules Used
+- **Node js server starter**
+    - strongloop
+	- loopback
+- **test**
+	- mocha
+    - supertest
+	- assert
 
 ## Built with:
 
